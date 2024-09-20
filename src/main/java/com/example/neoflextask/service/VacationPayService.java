@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class VacationPayService {
     public double calculateVacationPay(double avgMountSalary, int numOfDays){
         double dailySalary = avgMountSalary / 29.3;
-        return dailySalary * numOfDays;
+        return Math.round(dailySalary * numOfDays);
     }
 }
