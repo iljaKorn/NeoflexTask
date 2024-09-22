@@ -1,1 +1,1 @@
-Для получения праздничных дней использовал библиотеку jollyday: [Ссылка](https://github.com/focus-shift/jollyday)
+Для получения праздничных дней использовал библиотеку [jollyday](https://github.com/focus-shift/jollyday).
