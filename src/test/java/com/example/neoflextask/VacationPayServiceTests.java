@@ -14,7 +14,7 @@ public class VacationPayServiceTests {
         VacationPayService vacationPayService = new VacationPayService();
         double avgSalary = 20000;
         int numOfDays = 12;
-        assertEquals(vacationPayService.calculateVacationPay(avgSalary, numOfDays), 8191);
+        assertEquals(vacationPayService.calculateVacationPay(avgSalary, numOfDays), 8191.126279863482);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class VacationPayServiceTests {
         double avgSalary = 20000;
         int numOfDays = 12;
         LocalDate date = LocalDate.of(2022, 8, 10);
-        assertEquals(vacationPayService.calculateVacationPayFromDate(avgSalary, numOfDays, date), 8191);
+        assertEquals(vacationPayService.calculateVacationPayFromDate(avgSalary, numOfDays, date), 8191.126279863482);
     }
     @Test
     public void calculateVacationPayFromDateWithHolidays(){
@@ -31,6 +31,6 @@ public class VacationPayServiceTests {
         double avgSalary = 20000;
         int numOfDays = 12;
         LocalDate date = LocalDate.of(2022, 5, 1);
-        assertEquals(vacationPayService.calculateVacationPayFromDate(avgSalary, numOfDays, date), 6826);
+        assertEquals(vacationPayService.calculateVacationPayFromDate(avgSalary, numOfDays, date), 6825.938566552901);
     }
 }

@@ -13,7 +13,7 @@ import java.util.Set;
 public class VacationPayService {
     public double calculateVacationPay(double avgSalary, int numOfDays) {
         double dailySalary = avgSalary / 29.3;
-        return Math.round(dailySalary * numOfDays);
+        return dailySalary * numOfDays;
     }
 
     public double calculateVacationPayFromDate(double avgSalary, int numOfDays, LocalDate startDate) {
@@ -22,6 +22,6 @@ public class VacationPayService {
         int numOfHolidays = holidays.size();
 
         double dailySalary = avgSalary / 29.3;
-        return Math.round(dailySalary * (numOfDays - numOfHolidays));
+        return dailySalary * (numOfDays - numOfHolidays);
     }
 }
